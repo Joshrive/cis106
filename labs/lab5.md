@@ -43,14 +43,15 @@ The wc command is used to count the number of lines, characters and words in a f
 
 1. How many lines does the `/etc/passwd` file have?
 2. How many words does the `/etc/passwd` file have?
-
 ![image3.1](../imgs/Lab5/Q3.1-2.png)
 
 
-1. How many users can login with the `/bin/bash` shell?
+3. How many users can login with the `/bin/bash` shell?
 ![image3.3](../imgs/Lab5/Q3.3.png)
+
 4. How many users have the `/sbin/nologin` shell assigned?
 ![image3.4](../imgs/Lab5/Q3.4.png)
+
 5. Display your user’s information in `/etc/passwd` file
 ![image3.1](../imgs/Lab5/Q3.5.png)
 
