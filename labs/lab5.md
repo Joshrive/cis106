@@ -1,7 +1,7 @@
 # Lab 5 | Handling Text Files Answers to lab
  
 ## Question 1 
-Cat, head and tail commands are used for displaying the content of a file.
+
 1. Display the content of the `/etc/passwd` file.
 ![Image1.1](../imgs/Lab5/Q1.1.png)
 
@@ -19,7 +19,6 @@ Cat, head and tail commands are used for displaying the content of a file.
 
 ---
 ## Question 2
-The cut command is very useful when working with files that are already formatted using a field separator. The cut command can show specific information about each line of text in a given file.
 
 1. Display the first field of the `/etc/passwd` file.
 ![Image2.1](../imgs/Lab5/Q2.1.png)
@@ -39,7 +38,6 @@ The cut command is very useful when working with files that are already formatte
 
 
 ## Question 3
-The wc command is used to count the number of lines, characters and words in a file.
 
 1. How many lines does the `/etc/passwd` file have?
 2. How many words does the `/etc/passwd` file have?
@@ -57,9 +55,6 @@ The wc command is used to count the number of lines, characters and words in a f
 
 
 ## Question 4
-
-The ip command is used to manage network interfaces. To display the current NICs configuration, type: `ip ad` which is short for `ip address`. We are going to use the commands we learned to parse the output of the ip command.
-
 
 1. Run the `ip ad` command and display all the lines that match the string `inet`. How many lines did you get? 
 ![image4.1](../imgs/Lab5/Q4.1.png)
@@ -102,4 +97,3 @@ The ip command is used to manage network interfaces. To display the current NICs
 
 6. Display the content of the file you created earlier showing all the data that has been appended so far.
 ![image5.6](../imgs/Lab5/Q5.6.png)
-
