@@ -6,17 +6,20 @@
    
 ![Image1.1](../imgs/Lab5/Q1.1.png)
 
-1. Display the content of the `/etc/passwd` file in reverse order.
+2. Display the content of the `/etc/passwd` file in reverse order.
    
 ![Image1.2](../imgs/Lab5/Q1.2.png)
 
-1. Display the content of the `/etc/passwd` file with line numbers and the $ to indicate the end of every line.
+3. Display the content of the `/etc/passwd` file with line numbers and the $ to indicate the end of every line.
+   
 ![Image1.3](../imgs/Lab5/Q1.3.png)
 
 4. Display the first 5 lines of a the `/etc/passwd` file.
+   
 ![Image1.4](../imgs/Lab5/Q1.4.png)
 
 5. Display the last 5 lines of the `/etc/passwd` file.
+   
 ![Image1.5](../imgs/Lab5/Q1.5.png)
 
 ---
