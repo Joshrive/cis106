@@ -26,62 +26,79 @@
 ## Question 2
 
 1. Display the first field of the `/etc/passwd` file.
+   
 ![Image2.1](../imgs/Lab5/Q2.1.png)
 
 2. Display the last 5 users in the `/etc/passwd` file.
+   
 ![Image2.2](../imgs/Lab5/Q2.2.png)
 
 3. Display a list of all the users and their designated login shell separated by an `=` sign.
+   
 ![Image2.3](../imgs/Lab5/Q2.3.png)
 
-4. The sort command is another amazing tool in any linux user’s tool box. Sort allows you to display data in a given order. Cut the first and 3rd field of the `/etc/passwd` field and sort the output. 
+4. The sort command is another amazing tool in any linux user’s tool box. Sort allows you to display data in a given order. Cut the first and 3rd field of the `/etc/passwd` field and sort the output.
+   
 ![Image2.4](../imgs/Lab5/Q2.4.png)
 
 5. Repeat the previous command but this time only show the last 5 entries.
+   
 ![Image2.5](../imgs/Lab5/Q2.5.png)
 
 
-
+---
 ## Question 3
 
 1. How many lines does the `/etc/passwd` file have?
 2. How many words does the `/etc/passwd` file have?
+   
 ![image3.1](../imgs/Lab5/Q3.1-2.png)
 
 
 3. How many users can login with the `/bin/bash` shell?
+   
 ![image3.3](../imgs/Lab5/Q3.3.png)
 
 4. How many users have the `/sbin/nologin` shell assigned?
+   
 ![image3.4](../imgs/Lab5/Q3.4.png)
 
-5. Display your user’s information in `/etc/passwd` file
+5. Display your user’s information in `/etc/passwd` file.
+   
 ![image3.1](../imgs/Lab5/Q3.5.png)
 
-
+---
 ## Question 4
 
 1. Run the `ip ad` command and display all the lines that match the string `inet`. How many lines did you get? 
+   
 ![image4.1](../imgs/Lab5/Q4.1.png)
 
 2. Run the `ip ad` command and display all the lines that match the string `inet6`. Display the output in reverse order.
+   
 ![image4.2](../imgs/Lab5/Q4.2.png)
 
 3. Run the `ip ad` command and display all the lines that match the string `inet` or `inet6` sort the output and save it to a file.
+   
 ![image4.3](../imgs/Lab5/Q4.3.png)
 
 4. Run the `ip ad` command and display only the 3rd line that matches the string `inet`.
-5. ![image4.4](../imgs/Lab5/Q4.4.png)
-   
-6. Run the `ip ad` command and display all the ipv4 addresses sorted.
+
+![image4.4](../imgs/Lab5/Q4.4.png)
+
+5. Run the `ip ad` command and display all the ipv4 addresses sorted.
+
 ![image4.5](../imgs/Lab5/Q4.5.png)
 
+---
 ## Question 5
 
 1. Run the following command and save the output to a markdown file: `echo "# Information about my pc"`. You can use any naming convention you want for the file as long as it is a markdown file.
+   
 ![image5.1](../imgs/Lab5/Q5.1.png)
 
 2. Run the following command and append the output to the markdown file you created earlier: `echo "## CPU Information"`
+   
 ![image5.2](../imgs/Lab5/Q5.2.png)
 
 3. The `lscpu` command displays a lot of information about the CPU the computer has. Use the `lscpu`, `grep`, and the pipe (|) to extract, and append to the file you created earlier, the following information from the output of the `lscpu` command:
@@ -94,11 +111,14 @@
 ![image5.3](../imgs/Lab5/Q5.3.png)
 
 4. Run the following command and append the output to the markdown file you created earlier: `echo "## RAM Information"`
-![image5.4](../imgs/Lab5/Q5.4.png)
+   
+![image5.5](../imgs/Lab5/Q5.4.png)
 
 5. The command `lshw -c memory` displays information about the RAM installed in your system. Extract and append to the file the following information:
 * Memory size:
+  
 ![image5.5](../imgs/Lab5/Q5.5.png)
 
 6. Display the content of the file you created earlier showing all the data that has been appended so far.
+   
 ![image5.6](../imgs/Lab5/Q5.6.png)
