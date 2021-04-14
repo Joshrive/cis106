@@ -1,11 +1,11 @@
 
-What is GNU+Linux?
+### What is GNU+Linux?
 GNU+Linux is an operating system
 
-Reasons to use GNU+Linux?
-GNU+Linux offers high security.
-GNU+Linux is open source and free.
-GNU+Linux can run on any hardware.
+### Reasons to use GNU+Linux?
+* GNU+Linux offers high security.
+* GNU+Linux is open source and free.
+* GNU+Linux can run on any hardware.
 
 ![Linux](https://bit.ly/3dfMZiL)
 ----
