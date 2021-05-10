@@ -122,6 +122,7 @@ Check on https://www.minecraft.net/en-us/download/server for the latest version
   - Version at the time of this document is version 1.16.5.
 
 To download directly from the terminal, execute the following command
+
 ` wget -O server.jar https://launcher.mojang.com/v1/objects/1b557e7b033b583cd9f66746b7a9ab1ec1673ced/server.jar `
 
 The file will download with "server.jar" as its name.
@@ -140,6 +141,7 @@ Now we can execute the .jar file
   - We are specifying how much memory we want the file to use and the max memory we are allowing it to use. In this case we are setting both at 1 GB RAM.
 
 We will get an initial error (Shown below) 
+
 ![firstError](../Homework/firsterror.png)
 
 We need to accept the End User License Agreement before getting started with minecraft. The files we need to view will be generated for us in the working directory. Run the "ls" command and there should be two new files called "eula.txt" and "server.properties" in our working directory. 
