@@ -65,4 +65,4 @@ cd changes directory, ; starts a new commands, change to the directory before .h
 `/home/john/.git/`
 
 
-Command should be ` ls -lath
+Command should be ` ls -lath `
