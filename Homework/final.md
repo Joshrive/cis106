@@ -1,5 +1,7 @@
 # How to install a Minecraft Dedicated Server
+![creeper](https://www.minecraft.net/etc.clientlibs/minecraft/clientlibs/main/resources/img/minecraft-creeper-face.jpg)
 
+-----
 ## Table of Contents
 - [How to install a Minecraft Dedicated Server](#how-to-install-a-minecraft-dedicated-server)
   - [Table of Contents](#table-of-contents)
@@ -17,13 +19,21 @@
       - [Step 7 - Configuring the firewall](#step-7---configuring-the-firewall)
   - [Configuring the Minecraft Client](#configuring-the-minecraft-client)
       - [Step 8 - Installing/Configuring to the Minecraft client](#step-8---installingconfiguring-to-the-minecraft-client)
+  - [Conclution](#conclution)
+  - [Difficulties Encountered](#difficulties-encountered)
+  - [Work Reference](#work-reference)
 
+-----
 
 ## Project Description
-In this document, I will demonstrate how to install and configure a Minecraft dedicated server on a Linux Distribution. Linux is a perfect choice for establishing a Minecraft server since it is known for its stability and reliability for server support. The Linux distribution I have chosen is Ubuntu 20.04 LTS. Follow along as we will give you a step by step procedure of setting up and running your Minecraft server.
+In this document, I will demonstrate how to install and configure a Minecraft dedicated server on a Linux Distribution. Linux is a perfect choice for establishing a Minecraft server since it is known for its stability and reliability for server support. The Linux distribution I have chosen is Ubuntu 20.04 LTS. This server configuration will allow you to host Minecraft players under your local area network. Perfect for host a Minecraft LAN party. 
+
+Follow along as we will give you a step by step procedure of setting up and running your Minecraft server.
+
+----
 
 ## Requirements
-For this project we will need to have a virtual machine hosted on a Windows 10 Pro Operating System.
+For this project I will be using a virtual machine hosted on a Windows 10 Pro Operating System.
 
   *Requirements for my configuration*
 * A Virtual Machine application
@@ -32,7 +42,7 @@ For this project we will need to have a virtual machine hosted on a Windows 10 P
 * An Active internet connection
 
 
-The virtual machine I used was created with VM Virtualbox in a Windows 10 Pro desktop.
+The virtual machine I used was created with VM Virtualbox.
 If you need help setting up a VM using virtualbox, [follow this tutorial.](https://www.youtube.com/watch?v=PhErfLCd7OQ)  
 
 
@@ -146,17 +156,17 @@ We will get an initial error (Shown below)
 
 We need to accept the End User License Agreement before getting started with minecraft. The files we need to view will be generated for us in the working directory. Run the "ls" command and there should be two new files called "eula.txt" and "server.properties" in our working directory. 
 
-Using a text editor we will view the EULA.txt file.
+* Using a text editor we will view the EULA.txt file.
 
 ` nano eula.txt `
 
-Set the EULA parameter to true. Save and close the file.
+* Set the EULA parameter to true. Save and close the file.
 
 ![eulafalse](../Homework/eulafalse.png)
 ![eulatrue](../Homework/eulatrue.png)
 
 
-Now we will view the Server properties.
+* Now we will view the Server properties.
 
 `nano server.properties `
 
@@ -171,7 +181,7 @@ In this file we will only perform some of the primary configuration as listed be
 We have now configured both the eula.txt and server.properties file. 
 But before we re-run the command to start the server, let install Screen.
 
-Change out of the minecraft directory using the 'cd' commands
+* Change out of the minecraft directory using the 'cd' commands
 
 ` cd ` 
 
@@ -180,18 +190,18 @@ Change out of the minecraft directory using the 'cd' commands
 Screen will enable the Minecraft server to run as a background process. By not using Screen, if you were to start the Minecraft server in the terminal and later close the terminal, that would automatically kill the server. With Screen, the server will continue to run in the background. 
 
 Execute the commands below.
- - *If screen is already installed, skip the install*
+ - If screen is already installed, skip the install
 
 ` sudo apt install screen `
 
-Launch a Screen session using the screen command.
+* Launch a Screen session using the screen command.
 
 ` screen `
 
 ![screensession](../Homework/screensession.png)
 
 Screen is now running.
-Press the space bar, and the terminal will show standard terminal window again. 
+* Press the space bar, and the terminal will show standard terminal window again. 
 
 Now we can re-run the following command
 
@@ -235,7 +245,7 @@ Since I will be using a separate VM in my network to log into the Minecraft serv
 
 ` sudo ufw allow 25565 `
 
-![firewall](attachments/fwr.png)
+![firewall](../Homework/fwr.png)
 
 Now that we have the firewall configured and the necessary packages, we can now allow clients to connect to the Minecraft server. 
 
@@ -256,7 +266,7 @@ You can download he .deb file from [here](https://www.minecraft.net/en-us/downlo
 
 * The Minecraft launcher should be visible in your applications list.
 
-![mclauncher](attachments/mclauncher.png)
+![mclauncher](../Homework/mclauncher.png)
 
 
 Launch the application
@@ -267,7 +277,7 @@ Launch the application
 
 * Select "Add Server" from the options
 
-![addServer](attachments/addserver.png)
+![addServer](../Homework/addserver.png)
 
 * Input the Minecraft server information
   * Server Name:  
@@ -288,5 +298,30 @@ stating the user as joined the game... and died in this case.
 
 ![connected](../Homework/connected.png)
 
+## Conclution
 
+We have successfully installed a Minecraft server and can host your own server for 3-5 of your minecraft friends. 
+
+## Difficulties Encountered 
+
+**Minecraft client does not connect to server / VM Sharing the same IP address inside of virtual box manager**
+
+(Issue only when creating two VM under the same network)
+
+During the client to server connections, I encountered an issue in which I was unable to connect to the minecraft server. I realized both the MC-Client-VM and the MC-Server-VM shared the same IP address. 
+Each machine should have their own respective IP address to establish a connection. Otherwise, server will appear as pictured below. 
+
+![serverNA](../Homework/serverNA.png)
+
+> Solution:
+Within VirtualBox Manager go to the virtual machine hosting the server software. Right-click the VM > Settings > Network. Inside the Adapter 1 tab, from the drop-down, select Bridged Adapter. Hit Ok.
+
+Restart the Virtual Machines
+
+## Work Reference 
+"Installing Ubuntu Server 20.04" - https://www.youtube.com/watch?v=PhErfLCd7OQ
+
+"Minecraft Server Tutorial" - https://minecraft.fandom.com/wiki/Tutorials/Setting_up_a_server
+
+Visual guide by KeepItTechie- https://www.youtube.com/watch?v=lqaaNvHBYqM
 
