@@ -15,6 +15,7 @@
       - [Step 3 - Creating a user account for minecraft server](#step-3---creating-a-user-account-for-minecraft-server)
       - [Step 4 - Creating a Minecraft server directory](#step-4---creating-a-minecraft-server-directory)
       - [Step 5 - Download & Configure Minecraft Server](#step-5---download--configure-minecraft-server)
+  - [End User License Agreement](#end-user-license-agreement)
       - [Step 6 - Install & Configure Screen](#step-6---install--configure-screen)
       - [Step 7 - Configuring the firewall](#step-7---configuring-the-firewall)
   - [Configuring the Minecraft Client](#configuring-the-minecraft-client)
@@ -153,6 +154,8 @@ Now we can execute the .jar file
 We will get an initial error (Shown below) 
 
 ![firstError](../Homework/firsterror.png)
+
+## End User License Agreement
 
 We need to accept the End User License Agreement before getting started with minecraft. The files we need to view will be generated for us in the working directory. Run the "ls" command and there should be two new files called "eula.txt" and "server.properties" in our working directory. 
 
