@@ -19,7 +19,7 @@
       - [Step 7 - Configuring the firewall](#step-7---configuring-the-firewall)
   - [Configuring the Minecraft Client](#configuring-the-minecraft-client)
       - [Step 8 - Installing/Configuring to the Minecraft client](#step-8---installingconfiguring-to-the-minecraft-client)
-  - [Conclution](#conclution)
+  - [Conclusion](#conclusion)
   - [Difficulties Encountered](#difficulties-encountered)
   - [Work Reference](#work-reference)
 
@@ -298,7 +298,7 @@ stating the user as joined the game... and died in this case.
 
 ![connected](../Homework/connected.png)
 
-## Conclution
+## Conclusion
 
 We have successfully installed a Minecraft server and can host your own server for 3-5 of your minecraft friends. 
 
