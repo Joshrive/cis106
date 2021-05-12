@@ -18,7 +18,7 @@
       - [Step 6 - Install & Configure Screen](#step-6---install--configure-screen)
       - [Step 7 - Configuring the firewall](#step-7---configuring-the-firewall)
   - [Configuring the Minecraft Client](#configuring-the-minecraft-client)
-      - [Step 8 - Installing/Configuring to the Minecraft client](#step-8---installingconfiguring-to-the-minecraft-client)
+      - [Installing/Configuring to the Minecraft client](#installingconfiguring-to-the-minecraft-client)
   - [Conclusion](#conclusion)
   - [Difficulties Encountered](#difficulties-encountered)
   - [Work Reference](#work-reference)
@@ -241,7 +241,7 @@ To log out or close the Terminal, be sure to use the sequence Ctrl-A + Ctrl-D to
 
 Once we have installed the required items, we now need to configure the firewall. 
 
-Since I will be using a separate VM in my network to log into the Minecraft server, I need to allow incoming connections from minecraft through port 25565 *(default)*
+This will allow incoming connections from minecraft through port 25565 *(default)*
 
 * Execute the following command to add a new firewall rule.
 
@@ -254,9 +254,9 @@ Now that we have the firewall configured and the necessary packages, we can now 
 
 ## Configuring the Minecraft Client
 
-We will be working on another VM separate from the VM hosting the Minecraft Server.
+I will be connecting to the Minecraft server using a different VM in my network. 
 
-#### Step 8 - Installing/Configuring to the Minecraft client
+#### Installing/Configuring to the Minecraft client
 
 We will require Minecraft Java Edition. 
 
