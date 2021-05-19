@@ -14,7 +14,7 @@ I play Minecraft all the time and figured this would be an interesting project.
 Well considering I do not have any Linux experience, I am somewhat intimidated with anything related to Linux. 
 
 ##### 4. How are you planning to overcome these difficulties?
-But I am confident I can overcome any possible obstacles by searching the web.
+I am confident I can overcome any possible obstacles by searching the web. Researching never fails.
 
 ##### 5. How do you think completing this project will help you in your career?
 I think Linux in general is a great tool. Being able to configure servers and clients via the terminal would make great practice for possible scenarios where I would need to deploy a Linux VM.
